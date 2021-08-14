@@ -1,32 +1,40 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ScavTrap.hpp                                       :+:      :+:    :+:   */
+/*   Brain.cpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: adegarr <adegarr@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/08/05 16:29:58 by ade-garr          #+#    #+#             */
-/*   Updated: 2021/08/05 23:45:21 by adegarr          ###   ########.fr       */
+/*   Created: 2021/08/12 15:58:59 by adegarr           #+#    #+#             */
+/*   Updated: 2021/08/12 16:05:43 by adegarr          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef SCAVTRAP_H
-# define SCAVTRAP_H
+#include "Brain.hpp"
+#include <string>
 
-#include "ClapTrap.hpp"
+Brain::Brain(void) {
 
-class ScavTrap : virtual public ClapTrap {
+    return ;
+}
 
-public:
+Brain::Brain(Brain const &cpy) {
 
-	ScavTrap(std::string name);
-	ScavTrap(ScavTrap const &cpy);
-	~ScavTrap(void);
+    *this = cpy;
+    return ;
+}
 
-	ScavTrap	&operator=(ScavTrap const &rhs);
-	void		attack(std::string const &target);
-	void		guardGate(void) const;
+Brain::~Brain(void) {
 
-};
+    return ;
+}
 
-#endif
+Brain   &Brain::operator=(Brain const &rhs) {
+
+    int i;
+
+    for (i = 0; i < 100 ; i++) {
+        this->ideas[i] = rhs.ideas[i];
+    }
+    return (*this);
+}

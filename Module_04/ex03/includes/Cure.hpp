@@ -1,31 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ScavTrap.hpp                                       :+:      :+:    :+:   */
+/*   Cure.hpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: adegarr <adegarr@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/08/05 16:29:58 by ade-garr          #+#    #+#             */
-/*   Updated: 2021/08/05 23:45:21 by adegarr          ###   ########.fr       */
+/*   Created: 2021/08/13 05:32:14 by adegarr           #+#    #+#             */
+/*   Updated: 2021/08/14 03:28:06 by adegarr          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef SCAVTRAP_H
-# define SCAVTRAP_H
+#ifndef CURE_H
+# define CURE_H
 
-#include "ClapTrap.hpp"
+# include "AMateria.hpp"
 
-class ScavTrap : virtual public ClapTrap {
+class Cure : public AMateria {
 
 public:
 
-	ScavTrap(std::string name);
-	ScavTrap(ScavTrap const &cpy);
-	~ScavTrap(void);
+	Cure(void);
+	Cure(std::string const &type);
+	Cure(Cure const &cpy);
+	virtual ~Cure(void);
 
-	ScavTrap	&operator=(ScavTrap const &rhs);
-	void		attack(std::string const &target);
-	void		guardGate(void) const;
+	Cure	&operator=(Cure const &rhs);
+	virtual AMateria	*clone(void) const;
 
 };
 

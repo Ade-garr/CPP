@@ -1,32 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ScavTrap.hpp                                       :+:      :+:    :+:   */
+/*   AMateria.hpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: adegarr <adegarr@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/08/05 16:29:58 by ade-garr          #+#    #+#             */
-/*   Updated: 2021/08/05 23:45:21 by adegarr          ###   ########.fr       */
+/*   Created: 2021/08/13 04:50:02 by adegarr           #+#    #+#             */
+/*   Updated: 2021/08/14 03:23:55 by adegarr          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef SCAVTRAP_H
-# define SCAVTRAP_H
+#ifndef AMATERIA_H
+# define AMATERIA_H
 
-#include "ClapTrap.hpp"
+# include <string>
+class ICharacter;
 
-class ScavTrap : virtual public ClapTrap {
+class AMateria {
+
+protected:
+
+	std::string	_type;
 
 public:
 
-	ScavTrap(std::string name);
-	ScavTrap(ScavTrap const &cpy);
-	~ScavTrap(void);
+	AMateria(std::string const &type);
+	AMateria(AMateria const &cpy);
+	virtual ~AMateria(void);
 
-	ScavTrap	&operator=(ScavTrap const &rhs);
-	void		attack(std::string const &target);
-	void		guardGate(void) const;
-
+	AMateria	&operator=(AMateria const &rhs);
+	std::string const	&getType(void) const; //Returns the materia type
+	virtual AMateria	*clone(void) const = 0;
+	virtual void use(ICharacter &target);
 };
 
 #endif

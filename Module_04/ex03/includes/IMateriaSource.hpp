@@ -1,32 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ScavTrap.hpp                                       :+:      :+:    :+:   */
+/*   IMateriaSource.hpp                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: adegarr <adegarr@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/08/05 16:29:58 by ade-garr          #+#    #+#             */
-/*   Updated: 2021/08/05 23:45:21 by adegarr          ###   ########.fr       */
+/*   Created: 2021/08/14 00:24:08 by adegarr           #+#    #+#             */
+/*   Updated: 2021/08/14 03:06:45 by adegarr          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef SCAVTRAP_H
-# define SCAVTRAP_H
+#ifndef IMATERIASOURCE_H
+# define IMATERIASOURCE_H
 
-#include "ClapTrap.hpp"
+# include "AMateria.hpp"
+# include <string>
 
-class ScavTrap : virtual public ClapTrap {
-
-public:
-
-	ScavTrap(std::string name);
-	ScavTrap(ScavTrap const &cpy);
-	~ScavTrap(void);
-
-	ScavTrap	&operator=(ScavTrap const &rhs);
-	void		attack(std::string const &target);
-	void		guardGate(void) const;
-
+class IMateriaSource
+{
+	public:
+	virtual ~IMateriaSource() {}
+	virtual void learnMateria(AMateria*) = 0;
+	virtual AMateria* createMateria(std::string const & type) = 0;
 };
 
 #endif

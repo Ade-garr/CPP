@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   FlagTrap.hpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ade-garr <ade-garr@student.42.fr>          +#+  +:+       +#+        */
+/*   By: adegarr <adegarr@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/05 17:46:31 by ade-garr          #+#    #+#             */
-/*   Updated: 2021/08/05 18:10:01 by ade-garr         ###   ########.fr       */
+/*   Updated: 2021/08/05 23:45:27 by adegarr          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 #include "ClapTrap.hpp"
 #include <string>
 
-class FlagTrap : public ClapTrap {
+class FlagTrap : virtual public ClapTrap {
 
 public:
 

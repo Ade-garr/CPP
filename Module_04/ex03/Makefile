@@ -6,15 +6,16 @@
 #    By: adegarr <adegarr@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/02/12 10:29:31 by user42            #+#    #+#              #
-#    Updated: 2021/08/05 23:46:57 by adegarr          ###   ########.fr        #
+#    Updated: 2021/08/14 03:04:39 by adegarr          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 SRCS += srcs/main.cpp
-SRCS += srcs/ClapTrap.cpp
-SRCS += srcs/ScavTrap.cpp
-SRCS += srcs/FlagTrap.cpp
-SRCS += srcs/DiamondTrap.cpp
+SRCS += srcs/AMateria.cpp
+SRCS += srcs/Character.cpp
+SRCS += srcs/MateriaSource.cpp
+SRCS += srcs/Ice.cpp
+SRCS += srcs/Cure.cpp
 
 OBJS	= ${SRCS:.cpp=.o}
 
@@ -28,10 +29,13 @@ CFLAGS	+= -Wall
 CFLAGS	+= -Wextra
 CFLAGS	+= -Werror
 
-HEADER += ${INCLUDES}ClapTrap.hpp
-HEADER += ${INCLUDES}ScavTrap.hpp
-HEADER += ${INCLUDES}FlagTrap.hpp
-HEADER += ${INCLUDES}DiamondTrap.hpp
+HEADER += ${INCLUDES}AMateria.hpp
+HEADER += ${INCLUDES}Character.hpp
+HEADER += ${INCLUDES}ICharacter.hpp
+HEADER += ${INCLUDES}Ice.hpp
+HEADER += ${INCLUDES}Cure.hpp
+HEADER += ${INCLUDES}MateriaSource.hpp
+HEADER += ${INCLUDES}IMateriaSource.hpp
 
 all:		${NAME}
 

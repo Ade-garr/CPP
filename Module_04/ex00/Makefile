@@ -6,15 +6,17 @@
 #    By: adegarr <adegarr@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/02/12 10:29:31 by user42            #+#    #+#              #
-#    Updated: 2021/08/05 23:46:57 by adegarr          ###   ########.fr        #
+#    Updated: 2021/08/12 15:09:19 by adegarr          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 SRCS += srcs/main.cpp
-SRCS += srcs/ClapTrap.cpp
-SRCS += srcs/ScavTrap.cpp
-SRCS += srcs/FlagTrap.cpp
-SRCS += srcs/DiamondTrap.cpp
+SRCS += srcs/Animal.cpp
+SRCS += srcs/WrongAnimal.cpp
+SRCS += srcs/Dog.cpp
+SRCS += srcs/Cat.cpp
+SRCS += srcs/WrongCat.cpp
+SRCS += srcs/WrongDog.cpp
 
 OBJS	= ${SRCS:.cpp=.o}
 
@@ -28,10 +30,12 @@ CFLAGS	+= -Wall
 CFLAGS	+= -Wextra
 CFLAGS	+= -Werror
 
-HEADER += ${INCLUDES}ClapTrap.hpp
-HEADER += ${INCLUDES}ScavTrap.hpp
-HEADER += ${INCLUDES}FlagTrap.hpp
-HEADER += ${INCLUDES}DiamondTrap.hpp
+HEADER += ${INCLUDES}Animal.hpp
+HEADER += ${INCLUDES}WrongAnimal.hpp
+HEADER += ${INCLUDES}Dog.hpp
+HEADER += ${INCLUDES}WrongDog.hpp
+HEADER += ${INCLUDES}Cat.hpp
+HEADER += ${INCLUDES}WrongCat.hpp
 
 all:		${NAME}
 
