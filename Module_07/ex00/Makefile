@@ -6,7 +6,7 @@
 #    By: ade-garr <ade-garr@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/02/12 10:29:31 by user42            #+#    #+#              #
-#    Updated: 2021/09/04 17:42:47 by ade-garr         ###   ########.fr        #
+#    Updated: 2021/09/04 23:52:45 by ade-garr         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,7 +14,7 @@ SRCS += srcs/main.cpp
 
 OBJS	= ${SRCS:.cpp=.o}
 
-NAME	= convert
+NAME	= a.out
 
 INCLUDES = ./includes/
 
@@ -24,7 +24,7 @@ CFLAGS	+= -Wall
 CFLAGS	+= -Wextra
 CFLAGS	+= -Werror
 
-HEADER += ${INCLUDES}
+HEADER += ${INCLUDES}whatever.hpp
 
 all:		${NAME}
 

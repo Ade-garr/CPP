@@ -6,15 +6,19 @@
 #    By: ade-garr <ade-garr@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/02/12 10:29:31 by user42            #+#    #+#              #
-#    Updated: 2021/09/04 17:42:47 by ade-garr         ###   ########.fr        #
+#    Updated: 2021/09/04 19:01:27 by ade-garr         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 SRCS += srcs/main.cpp
+SRCS += srcs/Base.cpp
+SRCS += srcs/A.cpp
+SRCS += srcs/B.cpp
+SRCS += srcs/C.cpp
 
 OBJS	= ${SRCS:.cpp=.o}
 
-NAME	= convert
+NAME	= a.out
 
 INCLUDES = ./includes/
 
@@ -24,7 +28,10 @@ CFLAGS	+= -Wall
 CFLAGS	+= -Wextra
 CFLAGS	+= -Werror
 
-HEADER += ${INCLUDES}
+HEADER += ${INCLUDES}Base.hpp
+HEADER += ${INCLUDES}A.hpp
+HEADER += ${INCLUDES}B.hpp
+HEADER += ${INCLUDES}C.hpp
 
 all:		${NAME}
 
