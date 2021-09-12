@@ -6,11 +6,12 @@
 #    By: ade-garr <ade-garr@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/02/12 10:29:31 by user42            #+#    #+#              #
-#    Updated: 2021/09/05 17:45:55 by ade-garr         ###   ########.fr        #
+#    Updated: 2021/09/06 02:19:43 by ade-garr         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 SRCS += srcs/main.cpp
+SRCS += srcs/span.cpp
 
 OBJS	= ${SRCS:.cpp=.o}
 
@@ -24,7 +25,7 @@ CFLAGS	+= -Wall
 CFLAGS	+= -Wextra
 CFLAGS	+= -Werror
 
-HEADER += ${INCLUDES}easyfind.hpp
+HEADER += ${INCLUDES}span.hpp
 
 all:		${NAME}
 
