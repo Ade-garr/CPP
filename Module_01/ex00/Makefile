@@ -6,7 +6,7 @@
 #    By: ade-garr <ade-garr@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/02/12 10:29:31 by user42            #+#    #+#              #
-#    Updated: 2021/08/02 15:46:50 by ade-garr         ###   ########.fr        #
+#    Updated: 2021/09/24 11:33:18 by ade-garr         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -26,6 +26,7 @@ CC		= clang++
 CFLAGS	+= -Wall
 CFLAGS	+= -Wextra
 CFLAGS	+= -Werror
+CFLAGS	+= -std=c++98
 
 HEADER += ${INCLUDES}Zombie.hpp
 

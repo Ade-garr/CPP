@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: adegarr <adegarr@student.42.fr>            +#+  +:+       +#+        */
+/*   By: ade-garr <ade-garr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/03 00:02:03 by ade-garr          #+#    #+#             */
-/*   Updated: 2021/08/16 23:14:38 by adegarr          ###   ########.fr       */
+/*   Updated: 2021/09/24 11:49:37 by ade-garr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ int	main(int argc, char **argv) {
 	std::ifstream	input_file;
 	std::string		output;
 	std::ofstream	output_file;
-	std::string		output_filename = argv[1];
+	std::string		output_filename;
 	size_t			pos = 0;
 
 	if (argc != 4) {
@@ -31,6 +31,7 @@ int	main(int argc, char **argv) {
 		std::cout << "Bad arguments !" << std::endl;
 		return (1);
 	}
+	output_filename = argv[1];
 	input_file.open(argv[1]);
 	if (input_file.is_open() == 0) {
 		std::cout << "Can't open input file !" << std::endl;
@@ -47,7 +48,7 @@ int	main(int argc, char **argv) {
 		*it = toupper(*it);
 	}
 	output_filename += ".replace";
-	output_file.open(output_filename);
+	output_file.open(output_filename.c_str());
 	if (output_file.is_open() == 0) {
 		std::cout << "Can't open output file !" << std::endl;
 		return (1);

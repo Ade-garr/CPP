@@ -6,7 +6,7 @@
 #    By: ade-garr <ade-garr@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/02/12 10:29:31 by user42            #+#    #+#              #
-#    Updated: 2021/08/03 02:24:17 by ade-garr         ###   ########.fr        #
+#    Updated: 2021/09/24 11:47:54 by ade-garr         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,24 +16,21 @@ OBJS	= ${SRCS:.cpp=.o}
 
 NAME	= replace
 
-INCLUDES = ./includes/
-
 CC		= clang++
 
 CFLAGS	+= -Wall
 CFLAGS	+= -Wextra
 CFLAGS	+= -Werror
-
-HEADER += ${INCLUDES}
+CFLAGS	+= -std=c++98
 
 all:		${NAME}
 
 ${NAME}:	${OBJS}
-			${CC} ${CFLAGS} -I ${INCLUDES} ${OBJS} -o ${NAME}
+			${CC} ${CFLAGS} ${OBJS} -o ${NAME}
 			printf "\033[32m$@ is ready ! \n\033[0m"
 
-${OBJS}: %.o: %.cpp ${HEADER}
-			${CC} ${CFLAGS} -I ${INCLUDES} -c $< -o $@
+${OBJS}: %.o: %.cpp
+			${CC} ${CFLAGS} -c $< -o $@
 			
 clean:
 			rm -f ${OBJS}
