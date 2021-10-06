@@ -6,7 +6,7 @@
 /*   By: ade-garr <ade-garr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/05 14:54:41 by ade-garr          #+#    #+#             */
-/*   Updated: 2021/08/05 17:42:53 by ade-garr         ###   ########.fr       */
+/*   Updated: 2021/10/06 12:10:19 by ade-garr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,7 @@ class ClapTrap {
 
 public:
 
+	ClapTrap() {}
 	ClapTrap(std::string	name);
 	ClapTrap(ClapTrap const &cpy);
 	~ClapTrap(void);

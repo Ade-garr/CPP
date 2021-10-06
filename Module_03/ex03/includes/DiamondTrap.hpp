@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   DiamondTrap.hpp                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: adegarr <adegarr@student.42.fr>            +#+  +:+       +#+        */
+/*   By: ade-garr <ade-garr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/05 22:25:43 by adegarr           #+#    #+#             */
-/*   Updated: 2021/08/05 23:23:40 by adegarr          ###   ########.fr       */
+/*   Updated: 2021/10/06 12:17:43 by ade-garr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,7 @@ class DiamondTrap : public FlagTrap, public ScavTrap {
 
 public:
 
+    DiamondTrap() {}
     DiamondTrap(std::string name);
     DiamondTrap(DiamondTrap const &cpy);
     ~DiamondTrap(void);

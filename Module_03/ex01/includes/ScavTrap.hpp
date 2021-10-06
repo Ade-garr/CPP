@@ -6,7 +6,7 @@
 /*   By: ade-garr <ade-garr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/05 16:29:58 by ade-garr          #+#    #+#             */
-/*   Updated: 2021/08/05 17:43:21 by ade-garr         ###   ########.fr       */
+/*   Updated: 2021/10/06 12:10:29 by ade-garr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,7 @@ class ScavTrap : public ClapTrap {
 
 public:
 
+	ScavTrap() {}
 	ScavTrap(std::string name);
 	ScavTrap(ScavTrap const &cpy);
 	~ScavTrap(void);

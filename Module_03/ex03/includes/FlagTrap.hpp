@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   FlagTrap.hpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: adegarr <adegarr@student.42.fr>            +#+  +:+       +#+        */
+/*   By: ade-garr <ade-garr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/05 17:46:31 by ade-garr          #+#    #+#             */
-/*   Updated: 2021/08/05 23:45:27 by adegarr          ###   ########.fr       */
+/*   Updated: 2021/10/06 12:17:56 by ade-garr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,7 @@ class FlagTrap : virtual public ClapTrap {
 
 public:
 
+	FlagTrap() {}
 	FlagTrap(std::string name);
 	FlagTrap(FlagTrap const &cpy);
 	~FlagTrap(void);
