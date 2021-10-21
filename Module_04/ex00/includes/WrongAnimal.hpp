@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   WrongAnimal.hpp                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: adegarr <adegarr@student.42.fr>            +#+  +:+       +#+        */
+/*   By: ade-garr <ade-garr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/07 15:00:30 by adegarr           #+#    #+#             */
-/*   Updated: 2021/08/12 15:10:34 by adegarr          ###   ########.fr       */
+/*   Updated: 2021/10/21 14:47:11 by ade-garr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ public:
 
     WrongAnimal(void);
     WrongAnimal(WrongAnimal const &cpy);
-    virtual ~WrongAnimal(void);
+    ~WrongAnimal(void);
 
     WrongAnimal  &operator=(WrongAnimal const &rhs);
     void    makeSound(void) const;

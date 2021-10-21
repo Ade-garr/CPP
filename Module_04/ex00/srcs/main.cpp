@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: adegarr <adegarr@student.42.fr>            +#+  +:+       +#+        */
+/*   By: ade-garr <ade-garr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/07 17:13:07 by adegarr           #+#    #+#             */
-/*   Updated: 2021/08/12 15:20:50 by adegarr          ###   ########.fr       */
+/*   Updated: 2021/10/21 14:48:30 by ade-garr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,4 +39,11 @@ int main()
     b->makeSound(); //will output the cat sound!
     a->makeSound();
     zeta->makeSound();
+
+    delete meta;
+    delete j;
+    delete i;
+    delete zeta;
+    delete a;
+    delete b;
 }

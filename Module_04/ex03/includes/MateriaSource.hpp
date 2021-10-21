@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   MateriaSource.hpp                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: adegarr <adegarr@student.42.fr>            +#+  +:+       +#+        */
+/*   By: ade-garr <ade-garr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/14 00:25:37 by adegarr           #+#    #+#             */
-/*   Updated: 2021/08/14 02:40:44 by adegarr          ###   ########.fr       */
+/*   Updated: 2021/10/21 15:26:13 by ade-garr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ public:
 
 	MateriaSource(void);
 	MateriaSource(MateriaSource const &cpy);
-	~MateriaSource(void);
+	virtual ~MateriaSource(void);
 
 	MateriaSource &operator=(MateriaSource const &rhs);
 	virtual void learnMateria(AMateria *m);

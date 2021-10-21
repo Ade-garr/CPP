@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Character.hpp                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: adegarr <adegarr@student.42.fr>            +#+  +:+       +#+        */
+/*   By: ade-garr <ade-garr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/13 22:39:31 by adegarr           #+#    #+#             */
-/*   Updated: 2021/08/14 03:17:51 by adegarr          ###   ########.fr       */
+/*   Updated: 2021/10/21 15:25:35 by ade-garr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ public:
 
 	Character(std::string name);
 	Character(Character const &cpy);
-	~Character(void);
+	virtual ~Character(void);
 
 	Character	&operator=(Character const &rhs);
 	virtual std::string const &getName() const;
