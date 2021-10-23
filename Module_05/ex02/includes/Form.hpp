@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Form.hpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: adegarr <adegarr@student.42.fr>            +#+  +:+       +#+        */
+/*   By: ade-garr <ade-garr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/16 12:48:11 by adegarr           #+#    #+#             */
-/*   Updated: 2021/08/16 23:42:44 by adegarr          ###   ########.fr       */
+/*   Updated: 2021/10/23 15:24:25 by ade-garr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,7 +48,7 @@ public:
 		virtual const char *what() const throw();
 
 	};
-	class GradeNotSignedException : public std::exception {
+	class FormNotSignedException : public std::exception {
 	
 	public:
 

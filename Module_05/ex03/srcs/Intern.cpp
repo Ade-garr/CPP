@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Intern.cpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: adegarr <adegarr@student.42.fr>            +#+  +:+       +#+        */
+/*   By: ade-garr <ade-garr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/17 02:38:02 by adegarr           #+#    #+#             */
-/*   Updated: 2021/08/17 18:51:06 by adegarr          ###   ########.fr       */
+/*   Updated: 2021/10/23 15:52:34 by ade-garr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,13 +18,25 @@
 #include <string>
 #include <iostream>
 
-Intern::Intern() : _tab{"ShrubberyCreationForm", "RobotomyRequestForm", "PresidentialPardonForm"}, _ptr{&Intern::makeShrubberyCreationForm, &Intern::makeRobotomyRequestForm, &Intern::makePresidentialPardonForm} {
+Intern::Intern() {
 
+	_tab[0] = "ShrubberyCreationForm";
+	_tab[1] = "RobotomyRequestForm";
+	_tab[2] = "PresidentialPardonForm";
+	_ptr[0] = &Intern::makeShrubberyCreationForm;
+	_ptr[1] = &Intern::makeRobotomyRequestForm;
+	_ptr[2] = &Intern::makePresidentialPardonForm;
 	return ;
 }
 
-Intern::Intern(Intern const &cpy) : _tab{"ShrubberyCreationForm", "RobotomyRequestForm", "PresidentialPardonForm"}, _ptr{&Intern::makeShrubberyCreationForm, &Intern::makeRobotomyRequestForm, &Intern::makePresidentialPardonForm} {
+Intern::Intern(Intern const &cpy) {
 
+	_tab[0] = "ShrubberyCreationForm";
+	_tab[1] = "RobotomyRequestForm";
+	_tab[2] = "PresidentialPardonForm";
+	_ptr[0] = &Intern::makeShrubberyCreationForm;
+	_ptr[1] = &Intern::makeRobotomyRequestForm;
+	_ptr[2] = &Intern::makePresidentialPardonForm;
 	*this = cpy;
 	return ;
 }

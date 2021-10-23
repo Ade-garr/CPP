@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: adegarr <adegarr@student.42.fr>            +#+  +:+       +#+        */
+/*   By: ade-garr <ade-garr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/16 04:34:57 by adegarr           #+#    #+#             */
-/*   Updated: 2021/08/17 01:52:02 by adegarr          ###   ########.fr       */
+/*   Updated: 2021/10/23 15:27:16 by ade-garr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,8 +23,8 @@ int main() {
 	Bureaucrat b1("AAA", 1);
 	Bureaucrat b2("BBB", 140);
 	Bureaucrat b3("CCC", 150);
-	Bureaucrat b4("CCC", 50);
-	Bureaucrat b5("CCC", 20);
+	Bureaucrat b4("DDD", 50);
+	Bureaucrat b5("EEE", 20);
 	ShrubberyCreationForm f1("maison");
 	RobotomyRequestForm f2("Peon");
 	PresidentialPardonForm f3("R2D2");

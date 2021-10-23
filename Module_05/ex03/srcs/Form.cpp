@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Form.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: adegarr <adegarr@student.42.fr>            +#+  +:+       +#+        */
+/*   By: ade-garr <ade-garr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/16 16:17:38 by adegarr           #+#    #+#             */
-/*   Updated: 2021/08/16 22:59:04 by adegarr          ###   ########.fr       */
+/*   Updated: 2021/10/23 15:30:36 by ade-garr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -81,9 +81,9 @@ const char *Form::GradeTooLowException::what() const throw() {
 	return ("Grade too low !");
 }
 
-const char *Form::GradeNotSignedException::what() const throw() {
+const char *Form::FormNotSignedException::what() const throw() {
 
-	return ("Grade not signed !");
+	return ("Form not signed !");
 }
 
 std::ostream &operator<<(std::ostream &o, Form const &rhs) {
