@@ -11,7 +11,7 @@
 /* ************************************************************************** */
 
 #include "Serialisation.hpp"
-#include <cstdint>
+#include <stdint.h>
 #include <iostream>
 
 uintptr_t serialize(Data *ptr) {

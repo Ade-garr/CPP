@@ -17,6 +17,7 @@
 #include <cstdlib>
 #include <ctime>
 #include <iostream>
+#include <exception>
 
 Base *generation() {
 
@@ -52,17 +53,17 @@ void identify(Base &p) {
 		(void)dynamic_cast<A &>(p);
 		std::cout << "A" << std::endl;
 	}
-	catch (std::bad_cast &bc) {
+	catch (std::exception &bc) {
 		try {
 			(void)dynamic_cast<B &>(p);
 			std::cout << "B" << std::endl;
 		}
-		catch (std::bad_cast &bc) {
+		catch (std::exception &bc) {
 			try {
 				(void)dynamic_cast<C &>(p);
 				std::cout << "C" << std::endl;
 			}
-			catch (std::bad_cast &bc) {
+			catch (std::exception &bc) {
 				std::cout << "unknown" << std::endl;
 			}
 		}
