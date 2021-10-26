@@ -6,7 +6,7 @@
 /*   By: ade-garr <ade-garr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/07 17:13:07 by adegarr           #+#    #+#             */
-/*   Updated: 2021/10/21 14:48:30 by ade-garr         ###   ########.fr       */
+/*   Updated: 2021/10/23 13:24:49 by ade-garr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ int main()
     std::cout << "\n\nTEST 2:\n";
     const WrongAnimal* zeta = new WrongAnimal();
     const WrongAnimal* a = new WrongDog();
-    const WrongAnimal* b = new WrongCat();
+    const WrongCat* b = new WrongCat();
     std::cout << a->getType() << " " << std::endl;
     std::cout << b->getType() << " " << std::endl;
     b->makeSound(); //will output the cat sound!

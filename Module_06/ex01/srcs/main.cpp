@@ -6,7 +6,7 @@
 /*   By: ade-garr <ade-garr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/04 17:38:48 by ade-garr          #+#    #+#             */
-/*   Updated: 2021/09/04 17:59:55 by ade-garr         ###   ########.fr       */
+/*   Updated: 2021/10/26 11:09:52 by ade-garr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,7 @@ int main() {
 	Data test;
 
 	std::cout << "Adresse 'Data test': " << &test << std::endl;
+	std::cout << "Adresse 'Data test' après serialize: " << serialize(&test) << std::endl;
 	std::cout << "Adresse 'Data test' après serialize/deserialize: " << deserialize(serialize(&test)) << std::endl;
 	return (0);
 }
