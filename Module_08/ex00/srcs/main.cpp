@@ -29,17 +29,17 @@ int main(void) {
 		std::cout << *it << " ";
 	}
 	std::cout << "\n";
-	test = ::easyfind<std::vector<int>>(v, 2);
+	test = ::easyfind<std::vector<int> >(v, 2);
 	if (test == v.end())
 		std::cout << "Not found\n";
 	else
 		std::cout << "Found at i = " << test - v.begin() << std::endl;
-	test = ::easyfind<std::vector<int>>(v, 7);
+	test = ::easyfind<std::vector<int> >(v, 7);
 	if (test == v.end())
 		std::cout << "Not found\n";
 	else
 		std::cout << "Found at i = " << test - v.begin() << std::endl;
-	test = ::easyfind<std::vector<int>>(v, 21);
+	test = ::easyfind<std::vector<int> >(v, 21);
 	if (test == v.end())
 		std::cout << "Not found\n";
 	else
@@ -61,15 +61,15 @@ int main(void) {
 		std::cout << *lit << " ";
 	}
 	std::cout << "\n";
-	if (::easyfind<std::list<int>>(l, 1) == l.end())
+	if (::easyfind<std::list<int> >(l, 1) == l.end())
 		std::cout << "Not found\n";
 	else
 		std::cout << "Found in list\n";
-	if (::easyfind<std::list<int>>(l, 4) == l.end())
+	if (::easyfind<std::list<int> >(l, 4) == l.end())
 		std::cout << "Not found\n";
 	else
 		std::cout << "Found in list\n";
-	if (::easyfind<std::list<int>>(l, 98) == l.end())
+	if (::easyfind<std::list<int> >(l, 98) == l.end())
 		std::cout << "Not found\n";
 	else
 		std::cout << "Found in list\n";
