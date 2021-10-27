@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   RobotomyRequestForm.hpp                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: adegarr <adegarr@student.42.fr>            +#+  +:+       +#+        */
+/*   By: ade-garr <ade-garr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/17 00:03:57 by adegarr           #+#    #+#             */
-/*   Updated: 2021/08/17 18:27:21 by adegarr          ###   ########.fr       */
+/*   Updated: 2021/10/27 14:15:23 by ade-garr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,7 @@ class RobotomyRequestForm : public Form {
 
 public:
 
+	RobotomyRequestForm() {}
 	RobotomyRequestForm(std::string target);
 	RobotomyRequestForm(RobotomyRequestForm const &cpy);
 	virtual ~RobotomyRequestForm();

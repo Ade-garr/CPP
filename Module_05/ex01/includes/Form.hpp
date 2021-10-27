@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Form.hpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: adegarr <adegarr@student.42.fr>            +#+  +:+       +#+        */
+/*   By: ade-garr <ade-garr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/16 12:48:11 by adegarr           #+#    #+#             */
-/*   Updated: 2021/08/16 20:16:25 by adegarr          ###   ########.fr       */
+/*   Updated: 2021/10/27 14:20:02 by ade-garr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,7 @@ class Form {
 
 public:
 
+	Form() : _grade_exe(0), _grade_sig(0) {}
 	Form(std::string name, int grade_exe, int grade_sig);
 	Form(Form const &cpy);
 	~Form();

@@ -6,7 +6,7 @@
 /*   By: ade-garr <ade-garr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/16 12:48:11 by adegarr           #+#    #+#             */
-/*   Updated: 2021/10/23 15:30:17 by ade-garr         ###   ########.fr       */
+/*   Updated: 2021/10/27 14:21:35 by ade-garr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,7 @@ class Form {
 
 public:
 
+	Form() : _grade_exe(0), _grade_sig(0) {}
 	Form(std::string name, int grade_exe, int grade_sig);
 	Form(Form const &cpy);
 	virtual ~Form();
