@@ -47,7 +47,8 @@ void ShrubberyCreationForm::execute(Bureaucrat const &executor) const {
 		throw Form::GradeTooLowException();
 	else {
 		std::ofstream target;
-		target.open(this->_target + "_shrubbery");
+		std::string f = _target + "_shrubbery";
+		target.open(f.c_str());
 		if (target.is_open() == 0)
 			throw ShrubberyCreationForm::FileNotOpenException();
 		else {
