@@ -16,6 +16,11 @@
 #include <fstream>
 #include <iostream>
 
+ShrubberyCreationForm::ShrubberyCreationForm() : Form("ShrubberyCreationForm", 137, 145) {
+
+	return ;
+}
+
 ShrubberyCreationForm::ShrubberyCreationForm(std::string target) : Form("ShrubberyCreationForm", 137, 145), _target(target) {
 
 	return ;

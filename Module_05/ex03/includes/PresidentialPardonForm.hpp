@@ -20,7 +20,7 @@ class PresidentialPardonForm : public Form {
 
 public:
 
-	PresidentialPardonForm() {}
+	PresidentialPardonForm();
 	PresidentialPardonForm(std::string target);
 	PresidentialPardonForm(PresidentialPardonForm const &cpy);
 	virtual ~PresidentialPardonForm();

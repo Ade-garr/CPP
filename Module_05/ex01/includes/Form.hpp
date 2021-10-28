@@ -23,7 +23,7 @@ class Form {
 
 public:
 
-	Form() : _grade_exe(0), _grade_sig(0) {}
+	Form();
 	Form(std::string name, int grade_exe, int grade_sig);
 	Form(Form const &cpy);
 	~Form();

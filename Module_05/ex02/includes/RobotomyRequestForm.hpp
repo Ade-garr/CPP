@@ -20,7 +20,7 @@ class RobotomyRequestForm : public Form {
 
 public:
 
-	RobotomyRequestForm() {}
+	RobotomyRequestForm();
 	RobotomyRequestForm(std::string target);
 	RobotomyRequestForm(RobotomyRequestForm const &cpy);
 	~RobotomyRequestForm();

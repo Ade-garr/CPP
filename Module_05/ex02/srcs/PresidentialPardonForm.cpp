@@ -15,6 +15,11 @@
 #include <string>
 #include <iostream>
 
+PresidentialPardonForm::PresidentialPardonForm() : Form("PresidentialPardonForm", 5, 25) {
+
+	return ;
+}
+
 PresidentialPardonForm::PresidentialPardonForm(std::string target) : Form("PresidentialPardonForm", 5, 25), _target(target) {
 
 	return ;

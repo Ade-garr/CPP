@@ -15,6 +15,11 @@
 #include <string>
 #include <iostream>
 
+Form::Form() : _grade_exe(0), _grade_sig(0) {
+
+	return ;
+}
+
 Form::Form(std::string name, int grade_exe, int grade_sig) : _name(name), _grade_exe(grade_exe), _grade_sig(grade_sig) {
 
 	if (grade_exe < 1 || grade_sig < 1)

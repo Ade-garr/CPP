@@ -16,6 +16,12 @@
 #include <iostream>
 #include <cstdlib>
 
+RobotomyRequestForm::RobotomyRequestForm() : Form("RobotomyRequestForm", 45, 72) {
+
+	srand(time(NULL));
+	return ;
+}
+
 RobotomyRequestForm::RobotomyRequestForm(std::string target) : Form("RobotomyRequestForm", 45, 72), _target(target) {
 
 	srand(time(NULL));
