@@ -6,7 +6,7 @@
 /*   By: ade-garr <ade-garr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/05 14:54:35 by ade-garr          #+#    #+#             */
-/*   Updated: 2021/09/05 17:05:03 by ade-garr         ###   ########.fr       */
+/*   Updated: 2021/11/02 17:17:58 by ade-garr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,36 +16,36 @@
 int main() {
 
 	Array<int> arrayInt(5);
-	std::cout << "Avant de changer la valeur : ";
+	std::cout << "Before changing value : ";
 	printElem(arrayInt, 0);
 	arrayInt[0] = 2;
-	std::cout << "\nApres avoir changé la valeur : ";
+	std::cout << "\nAfter changing value : ";
 	printElem(arrayInt, 0);
-	std::cout << "\nEn essayant d'acceder a un index hors-limites : ";	
+	std::cout << "\nIndex beyond limits : ";	
 	printElem(arrayInt, 6);
 	
 	Array<std::string> arrayString(5);
-	std::cout << "\nAvant de changer la valeur : ";
+	std::cout << "\nBefore changing value : ";
 	printElem(arrayString, 3);
-	arrayString[3] = "Coucou les templates c'est trop genial\n";
-	std::cout << "\nApres avoir changé la valeur : ";
+	arrayString[3] = "Hello World !\n";
+	std::cout << "\nAfter changing value : ";
 	printElem(arrayString, 3);
 
 	Array<std::string> arrayStringCopy(arrayString);
-	std::cout << "\nOn cree une copie : ";
-	std::cout << "\nIndex 3 de la copie : ";
+	std::cout << "\nWe create copy : ";
+	std::cout << "\nIndex 3 of copy : ";
 	printElem(arrayStringCopy, 3);
-	arrayString[3] = "Coucou\n";
-	std::cout << "Index 3 de l'originale apres modification : ";
+	arrayString[3] = "Bye-bye\n";
+	std::cout << "Index 3 of the original after modification : ";
 	printElem(arrayString, 3);
-	std::cout << "Index 3 de la copie --> n'a pas change : ";
+	std::cout << "Index 3 of copy --> no changes : ";
 	printElem(arrayStringCopy, 3);
 
 	Array<int> arrayEmpty;
-	std::cout << "\nSize de l'originale: " << arrayInt.size();
-	std::cout << "\nSize de la copie avant : " << arrayEmpty.size();
+	std::cout << "\nSize original: " << arrayInt.size();
+	std::cout << "\nSize copy before : " << arrayEmpty.size();
 	arrayEmpty = arrayInt;
-	std::cout << "\nSize de la copie apres : " << arrayEmpty.size();
+	std::cout << "\nSize copy after : " << arrayEmpty.size();
 	std::cout << "\n";
 	return (0);
 }
