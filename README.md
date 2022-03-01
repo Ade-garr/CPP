@@ -1,6 +1,6 @@
-### Welcome to my C++ Pool repository 👋
+# 📌 C++ 📌
 
-⭐️ The C++ Pool is composed of 9 modules :
+The C++ Pool is composed of 9 modules :
 - Module_00: Namespace, class, member functions, stdio stream, initialization lists, static, const, and lots of basic stuff
 - Module_01: Memory allocation, References, Pointers to members, File streams
 - Module_02: Ad-hoc polymorphism, operators overload and canonical classes
@@ -11,7 +11,7 @@
 - Module_07: C++ Templates
 - Module_08: Templated containers, iterators, algorithms
 
-## 💡 Usage
+## 🔑 How to
 
 Each module has its own Makefile
 ```
